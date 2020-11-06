@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "{{ cookiecutter.package_name }}"
+version = "0.1.0"
+description = "{{ cookiecutter.package_description }}"
+authors = ["{{ cookiecutter.package_author }}"]
+packages = [{ include = "{{ cookiecutter.root_dir }}", from = "." }]
+
+[tool.poetry.scripts]
+app = "main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+loguru = "^0.5.3"
+typer = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=6.0.1"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"

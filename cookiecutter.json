@@ -1,0 +1,7 @@
+{
+  "root_dir": "app-dir",
+  "app_name": "python-package-dir-name",
+  "package_name": "package-name-in-poetry-settings",
+  "package_description": "Description in poetry settings",
+  "package_author": "Author in poetry settings"
+}
