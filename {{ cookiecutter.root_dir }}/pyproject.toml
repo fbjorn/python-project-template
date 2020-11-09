@@ -3,7 +3,7 @@ name = "{{ cookiecutter.package_name }}"
 version = "0.1.0"
 description = "{{ cookiecutter.package_description }}"
 authors = ["{{ cookiecutter.package_author }}"]
-packages = [{ include = "{{ cookiecutter.root_dir }}", from = "." }]
+packages = [{ include = "{{ cookiecutter.app_name }}", from = "." }]
 
 [tool.poetry.scripts]
 app = "main:app"
